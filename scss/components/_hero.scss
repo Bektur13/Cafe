@@ -1,0 +1,192 @@
+.hero {
+    &__title {
+        @include font(600,32px);
+        font-family: 'Poppins', sans-serif;
+    }
+    &__p {
+        @include font(400,14px);
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 40px;
+    }
+    &__ul {
+        margin-left: 10px;
+        position: relative;
+        li {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            @include font(700,15px);
+            a {
+                display: flex;
+                align-items: center;
+                svg {
+                    height: 10px;
+                    width: 10px;
+                    margin-left: 10px;
+                }
+            }
+            ul {
+                display: none;
+                position: absolute;
+                top: 20px;
+                left: 0;
+            }
+        }
+    }
+    .a {
+        color: black;
+    }
+    .hero__ul li:hover ul {
+        display: block;
+    }
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &_center {
+        display: flex;
+        flex-wrap: wrap;
+        .box {
+            display: flex;
+            align-items: center;
+            margin-right: 6px;
+            position: relative;
+            p {
+                @include font(400,14px);
+                font-family: 'Open Sans', sans-serif;
+                color: $color-light_gray;
+            }
+            .span,
+            .span2 {
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: 1px solid #d1d1d1;
+                margin-right: 5px;
+            }
+            .span::before{
+                content: '';
+                position: absolute;
+                top: 21px;
+                left: 11px;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 5px solid black;
+                box-sizing: border-box;
+                opacity: 0;
+                transition: 0.2s;
+            }
+            .span2::before {
+                content: '';
+                position: absolute;
+                top: 21px;
+                left: 11px;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 5px solid black;
+                box-sizing: border-box;
+                opacity: 0;
+                transition: 0.2s;
+            }
+            .input__checked:checked + .span::before {
+                opacity: 1;
+            }
+            .input__checked:checked + .span2::before {
+                opacity: 1;
+            }
+        }
+        .input__check {
+            display: none;
+        }
+    }
+    &__products {
+        @include font(600,12px);
+        color: $color-green;
+        font-family: 'Poppins', sans-serif;
+        width: 20px;
+        height: 18px;
+        background: #F4F8EC;
+        border-radius: 12px;
+        padding: 0px 8px 0px 10px;
+    }
+    .grid__view {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        color: black;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    .list__view {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        color: #a9a9a9;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    .tabs {
+        display: flex;
+        align-items: center;
+        p {
+            color: #a9a9a9;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .input__box {
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-input_background;
+        height: 30px;
+        border-radius: 20px;
+        padding: 6px 10px 6px 10px;
+        background: $color-input_background;
+        margin-right: 20px;
+        p {
+            @include font(400,14px);
+            font-family: 'Open Sans', sans-serif;
+            color: #575757;
+        }
+    }
+    &__nmb {
+        border: 2px solid #ebebeb;
+        border-radius: 12px;
+        font-family: 'Poppins', sans-serif;
+        @include font(600,12px);
+        padding: 3px;
+        margin-left: 8px;
+        color: black;
+    }
+    &_bottom {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        @include font(600,16px);
+        p {
+            color: $color-light_gray;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding: 0 5px;
+        background: $color-input_background;
+        border-radius: 12px;
+        margin-left: 10px;
+        p {
+            color: $color-green;
+        }
+        svg {
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.footer {
+    margin-top: 80px;
+    &_top {
+        display: flex;
+    }
+    &__title {
+        @include font(600,24px);
+        font-family: 'Poppins', sans-serif;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #46760A;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 5px;
+        }
+    }
+    &_bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__beans,
+    &__carrots,
+    &__apples,
+    &__garlic,
+    &__mush,
+    &__tomat,
+    &__chil,
+    &__bro,
+    &__wat,
+    &__ora,
+    &__ban,
+    &__gra,
+    &__che,
+    &__mea,
+    &__seo,
+    &__fis,
+    &__fre,
+    &__lem{
+        margin-right: 20px;
+        height: 20px;
+        background: #F5F5F5;
+        border: 1px solid #F5F5F5;
+        border-radius: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        padding: 6px 10px 4px 10px;
+    }
+    &__beans {
+        width: 46px;
+    }
+    &__carrots {
+        width: 56px;
+    }
+    &__apples {
+        width: 56px;
+    }
+    &__garlic {
+        width: 46px;
+    }
+    &__mush {
+        width: 90px;
+    }
+    &__tomat {
+        width: 76px;
+    }
+    &__chil {
+        width: 106px;
+    }
+    &__bro {
+        width: 64px;
+    }
+    &__wat {
+        width: 100px;
+    }
+    &__ora {
+        width: 66px;
+    }
+    &__ban {
+        width: 66px;
+    }
+    &__gra {
+        width: 56px;
+    }
+    &__che {
+        width: 66px;
+    }
+    &__mea {
+        width: 36px;
+    }
+    &__seo {
+        width: 60px;
+    }
+    &__fis {
+        width: 32px;
+    }
+    &__fre {
+        width: 84px;
+    }
+    &__lem {
+        width: 60px;
+    }
+    &__p {
+        @include font(400,14px);
+        font-family: 'Open Sans', sans-serif;
+    }
+}

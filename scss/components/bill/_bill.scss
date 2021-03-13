@@ -1,0 +1,442 @@
+.bill {
+    &__inputs {
+        display: flex;
+        justify-content: space-between;      
+    }
+    &__btn {
+        margin-top: 20px;
+        width: 218px;
+        height: 56px;
+        cursor: pointer;
+    }
+    &__title {
+        margin-bottom: 0;
+        @include font(600,24px);
+    }
+    &__box {
+        h5 {
+            @include font(600,14px);
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0px;
+        }
+        input {
+            margin-bottom: 20px;
+            width: 300px;
+            border-radius: 12px;
+            background: $color-input_background;
+            padding: 10px;
+            border: 1px solid #d1d1d1;
+            font-family: 'Open Sans', sans-serif;
+            @include font(400,14px);
+        }
+    }
+    &__p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        background: $color-input_background;
+        height: 18px;
+        padding: 10px;
+        border: 1px solid #d1d1d1;
+        width: 240px;
+        p {
+            font-family: 'Open Sans', sans-serif;
+            @include font(400,14px);
+        }
+    }
+    .method {
+        margin-top: 80px;
+        label {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            height: 18px;
+            padding: 10px;
+            background: $color-input_background;
+            border: 1px solid #d1d1d1;
+            border-radius: 12px;
+        }
+    }
+    .label__box {
+        display: flex;
+        align-items: center;
+        h5 {
+            @include font(600,14px);
+            font-family: 'Poppins', sans-serif;
+        }
+        p {
+            @include font(600,14px);
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .pay {
+        margin-top: 80px;
+        .payment {
+            padding: 10px;
+            border: 1px solid #d1d1d1;
+            border-radius: 12px;
+            &__box {
+                display: flex;
+            }
+            .card__box {
+                input {
+                    width: 673px;
+                }
+            }
+            .holder__box {
+                input {
+                    width: 350px;
+                    padding: 10px;
+                    background: $color-input_background;
+                    border-radius: 12px;
+                    border: 1px solid #d1d1d1;
+                }
+            }
+            .date__box {
+                margin-left: 30px;
+                input {
+                    width: 120px;
+                    padding: 10px;
+                    background: $color-input_background;
+                    border-radius: 12px;
+                    border: 1px solid #d1d1d1;
+                }
+            }
+            .cvc__box {
+                margin-left: 10px;
+                input {
+                    width: 120px;
+                    padding: 10px;
+                    background: $color-input_background;
+                    border-radius: 12px;
+                    border: 1px solid #d1d1d1;
+                }
+            }
+            label {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+        .paypal {
+            &__df {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                height: 18px;
+                padding: 10px;
+                background: $color-input_background;
+                border-radius: 12px;
+                border: 1px solid #d1d1d1;
+            }
+            &__box {
+                display: flex;
+                align-items: center;
+                h5 {
+                    @include font(600,14px);
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+    .info {
+        margin-top: 80px;
+        &__box {
+            h5 {
+                @include font(600,14px);
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 0;
+            }
+            input {
+                padding: 10px;
+                background: $color-input_background;
+                border-radius: 12px;
+                border: 1px solid #d1d1d1;
+                width: 710px;
+                height: 100px;
+            }
+        }
+    }
+    .confirmation {
+        &__label {
+            width: 570px;
+        }
+        &__label2 {
+            width: 430px;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: $color-input_background;
+            border-radius: 12px;
+            border: 1px solid #d1d1d1;
+            height: 18px;
+            margin-bottom: 16px;
+            p {
+                font-family: 'Open Sans', sans-serif;
+                @include font(400,14px);
+            }
+        }
+    }
+    .security {
+        svg {
+            margin-top: 30px;
+            margin-bottom: -25px;
+        }
+        h5 {
+            @include font(600,14px);
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0;
+        }
+        p {
+            max-width: 200px;
+            margin-bottom: 80px;
+        }
+    }
+    .price {
+        @include font(600,12px);
+        font-family: 'Poppins', sans-serif;
+        color: $color-green;
+        margin-right: 10px;
+    }
+    .price2 {
+        margin-left: 71px;
+    }
+    .summary {
+        margin-left: 30px;
+        padding: 10px;
+        border-radius: 12px;
+        border: 1px solid #d1d1d1;
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            p {
+                @include font(600,14px);
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 0;
+            }
+        }
+        &__input {
+            display: flex;
+            margin: 30px 0;
+            input {
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 12px;
+                border: 1px solid #d1d1d1;
+                background: $color-input_background;
+                width: 445px;
+            }
+            p {
+                @include font(600,14px);
+                font-family: 'Poppins', sans-serif;
+                margin-left: -80px;
+                margin-top: 35px;
+            }
+        }
+        &__p {
+            h5 {
+                @include font(600,14px);
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 0;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                @include font(400,14px);
+                color: $color-green;
+                margin-top: 5px;
+            }
+        }
+        &__foot {
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                @include font(600,26px);
+                font-family: 'Poppins', sans-serif;
+                color: $color-green;
+                margin-top: 25px;
+            }
+        }
+    }
+    &_left {
+        display: flex;
+        flex-wrap: wrap;
+        aside {
+            margin-top: 30px;
+        }
+        .aside__box {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                @include font(400,14px);
+                color: $color-light_gray;
+                margin: 0 0 0 10px;
+            }
+        }
+        .order {
+            margin-left: 30px;
+            h5 {
+                @include font(600,14px);
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 0px;
+            }
+            &__p {
+                display: flex;
+            }
+            &__leftp{
+                font-family: "Open Sans", sans-serif;
+                @include font(400,14px);
+                margin-left: 10px;
+            }
+            &__right {
+                font-family: "Open Sans", sans-serif;
+                @include font(400,14px);
+                color: $color-light_gray;
+            }
+            &__line {
+                width: 2px;
+                height: 20px;
+                background: #d1d1d1;
+                margin: 0 5px;
+                z-index: 1;
+            }
+            &__btn {
+                display: flex;
+                align-items: center;
+                margin-left: 150px;
+                padding: 5px;
+                background: $color-input_background;
+                border-radius: 12px;
+                border: 1px solid #d1d1d1;
+                height: 18px;
+                width: 85px;
+                p {
+                    font-size: 14px;
+                }
+            }
+            &__price {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                &1 {
+                    @include font(600,18px);
+                    font-family: 'Poppins', sans-serif;
+                    color: $color-green;
+                    margin-bottom: 0;
+                }
+                &2{
+                    margin-top: 5px;
+                    @include font(600,12px);
+                    font-family: 'Poppins', sans-serif;
+                    color: $color-light_gray;
+                }
+            }
+            &__ul {
+                position: relative;
+                li {
+                    font-family: 'Poppins', sans-serif;
+                    @include font(600,12px);
+                    a {
+                        display: flex;
+                        color: black;
+                        align-items: center;
+                        svg {
+                            height: 10px;
+                            width: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                    ul {
+                        display: none;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                    }
+                }
+            }
+            .order__ul li:hover ul {
+                transition: 15s;
+                display: block;
+            }
+        }
+    }
+}
+.left__h {
+    @include font(600,22px);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+.left__p {
+    font-family: "Open Sans", sans-serif;
+    @include font(400,14px);
+    margin-top: 10px;
+    color: $color-light_gray;
+}
+.label__box {
+    position: relative;
+}
+.paypal__box {
+    position: relative;
+}
+.span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #d1d1d1;
+    margin-right: 5px;
+}
+
+.span::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid $color-green;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.2s;
+}
+.span2::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 11px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid $color-green;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.2s;
+}
+.input__checked:checked + .span::before {
+    opacity: 1;
+}
+.input__check {
+    display: none;
+}
+.order__footline {
+    margin: 20px 0 30px 0;
+    height: 2px;
+    background: $color-input_background;
+    width: 100%;
+}

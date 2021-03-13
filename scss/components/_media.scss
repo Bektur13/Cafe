@@ -1,0 +1,275 @@
+// Index.html, list.html
+// Iphone 6/7/8 Plus
+@media screen and (max-width: 414px) {
+    //Header
+    .header {
+        &__svg {
+            margin: 40px 0 0 165px;
+            .header__busket {
+                margin-left: 20px;
+            }
+        }
+        &__search {
+            margin-top: 40px;
+        }
+        &__logo {
+            margin-left: 115px;
+        }
+    }
+    // Hero
+    .hero_bottom {
+        p {
+            font-size: 12px;
+        }
+    }
+    .tabs {
+        p {
+            @include font(400,12px);
+        }
+    }
+    .box {
+        p {
+            @include font(400,12px);
+        }
+    }
+    .bottom__ul li a {
+        margin: 20px 0 0 0;
+    }
+    .bottom__ul {
+        margin-top: -50px;
+    }
+    // Footer
+    .footer {
+        &__title {
+            font-size: 14px;
+        }
+        &__box {
+            a {
+                font-size: 12px;
+            }
+        }
+        &_bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .name {
+        font-size: 12px;
+    }
+    .price {
+        &__box {
+            flex-wrap: wrap;
+        }
+        .box_right {
+            margin-left: 0;
+        }
+    }
+    // List view 
+    .list {
+        &__box{
+            margin-right: 0;
+            width: 180px;
+        }
+        &__content {
+            margin-left: 30px;
+            width: 180px;
+            padding: 10px;
+        }
+    }
+    .input__box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .reset {
+        margin-left: 25px;
+    }
+    //Grid 
+    .grid__box {
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+}
+// Iphone X
+@media screen and (max-width: 375px) {
+    //Header
+    .header {
+        &__svg {
+            margin: 40px 0 0 150px;
+            .header__busket {
+                margin-left: 10px;
+            }
+        }
+        &__search {
+            margin-top: 40px;
+        }
+        &__logo {
+            margin-left: 100px;
+        }
+    }
+    // Hero
+    .hero_bottom {
+        p {
+            font-size: 12px;
+        }
+    }
+    .bottom__ul li a {
+        margin: 20px 0 0 0;
+    }
+    .bottom__ul {
+        margin-top: -50px;
+    }
+    .price {
+        &__box {
+            flex-wrap: wrap;
+        }
+        .box_right {
+            margin-left: 0;
+        }
+        input {
+            width: 90px;
+        }
+        &__inp {
+            padding-left: 10px;
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .grid__box {
+        padding: 5px 1px;
+    }
+}
+
+// Checkout.html
+@media screen and (max-width:1024px) {
+    .bill__box {
+        .input {
+            width: 240px;
+        }
+    }
+    .bill .pay .payment .card__box input {
+        width: 545px;
+    }
+    .bill .pay .payment .holder__box input {
+        width: 220px;
+    }
+    .bill_left {
+        .order__btn {
+            margin-left: 50px;
+        }
+    }
+    .bill .info__box input {
+        width: 580px;
+    }
+    .bill .summary__input input {
+        width: 355px;
+    }
+    .bill .summary {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bill__box {
+        .input {
+            width: 180px;
+        }
+    }
+    .bill .pay .payment .card__box input {
+        width: 405px;
+    }
+    .bill .pay .payment .holder__box input {
+        width: 160px;
+    }
+    .bill .pay .payment .date__box input {
+        width: 80px;
+    }
+    .bill .pay .payment .cvc__box input {
+        width: 80px;
+    }
+    .bill .info__box input {
+        width: 430px;
+    }
+    .bill .confirmation__label {
+        width: 430px;
+    }
+    .bill_left aside {
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+    .bill_left .order {
+        margin-left: 15px;
+    }
+    .bill .summary__input input {
+        width: 245px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .col-5 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .bill .pay .payment .card__box input {
+        width: 370px;
+    }
+    .bill .pay .payment .holder__box input {
+        width: 125px;
+    }
+    .bill .info__box input,
+    .bill .confirmation__label,
+    .bill .confirmation__label2  {
+        width: 392px;
+    }
+    .bill {
+        .summary {
+            margin-left: 0;
+        }
+    }
+    .bill_left aside {
+        margin-left: 0;
+    }
+    .bill .summary__input input {
+        width: 370px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .col-5 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .bill {
+        .summary {
+            margin-left: 0;
+        }
+        &_left aside {
+            margin-left: 0;
+        }
+        .bill__box input {
+            width: 150px;
+        }
+    }
+    .bill .pay .payment .card__box input {
+        width: 335px;
+    }
+    .bill .pay .payment .holder__box input {
+        width: 100px;
+    }
+    .bill .pay .payment .date__box input {
+        width: 60px;
+    }
+    .bill__box h5 {
+        font-size: 12px;
+    }
+    .bill .pay .payment .cvc__box input {
+        width: 60px;
+    }
+    .bill .info__box input {
+        width: 353px;
+    }
+    .bill .confirmation label {
+        width: 350px;
+    }
+} 
