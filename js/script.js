@@ -48,3 +48,8 @@ TweenMax.from(".bill",2.8,{
     x: 500,
     ease:Expo.easeInOut
 })
+TweenMax.from(".last",2.8,{
+    opacity: 0,
+    x: 500,
+    ease:Expo.easeInOut
+})
