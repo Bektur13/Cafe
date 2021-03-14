@@ -33,22 +33,22 @@ TweenMax.from(".hero",2.2,{
     y: 100,
     ease:Expo.easeInOut
 })
-TweenMax.from(".grid",2.8,{
+TweenMax.from(".grid",2.4,{
     opacity: 0,
     x: 500,
     ease:Expo.easeInOut
 })
-TweenMax.from(".list_view",2.8,{
+TweenMax.from(".list_view",2.4,{
     opacity: 0,
     x: 500,
     ease:Expo.easeInOut
 })
-TweenMax.from(".bill",2.8,{
+TweenMax.from(".bill",2.4,{
     opacity: 0,
     x: 500,
     ease:Expo.easeInOut
 })
-TweenMax.from(".last",2.8,{
+TweenMax.from(".last",2.4,{
     opacity: 0,
     x: 500,
     ease:Expo.easeInOut

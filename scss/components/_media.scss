@@ -273,3 +273,134 @@
         width: 350px;
     }
 } 
+
+// Last html
+@media screen and (max-width: 1024px) {
+    .last {
+        &_top {
+            top: 230px;
+            left: 200px;
+        }
+        .df {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .last {
+        &_top {
+            top: 150px;
+            left: 80px;
+        }
+        .df {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width: 414px) {
+    .last {
+        &_top {
+            top: 80px;
+            left: 10px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &_grey {
+            font-size: 10px;
+        }
+        .p_left {
+            font-size: 10px;
+        }
+        .h3 {
+            font-size: 16px;
+        }
+        .p {
+            max-width: 250px;
+            font-size: 14px;
+        }
+        &_right {
+            margin-left: 80px;
+        }
+        &__checkbox {
+            max-width: 230px;
+            input {
+                width: 15px;
+                height: 15px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .input {
+            max-width: 230px;
+        }
+        &__review {
+            max-width: 230px;
+        }
+        .review2 {
+            margin-left: 0;
+        }
+        .df {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .last {
+        &_top {
+            top: 50px;
+            left: 10px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &_grey {
+            font-size: 10px;
+        }
+        .p_left {
+            font-size: 10px;
+        }
+        .h3 {
+            font-size: 16px;
+        }
+        .p {
+            max-width: 250px;
+            font-size: 14px;
+        }
+        &_right {
+            margin-left: 80px;
+        }
+        &__checkbox {
+            max-width: 230px;
+            input {
+                width: 15px;
+                height: 15px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .input {
+            max-width: 230px;
+        }
+        &__review {
+            max-width: 230px;
+        }
+        .review2 {
+            margin-left: 0;
+        }
+        .df {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .last {
+        &_right {
+            margin-left: 60px;
+        }
+    }
+}
